@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de LED</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function encenderLed() {
+            fetch("/encender");
+        }
+       
+        function apagarLed() {
+            fetch("/apagar");
+        }
+    </script>
+</head>
+<body>
+<div class="style">
+<h1>preoyecto de encendido de le wifi con esp32</h1>
+    <h2>Control de LED</h2>
+    <button class="encender" onclick="encenderLed()">Encender LED</button>
+    <button class="apagar" onclick="apagarLed()">Apagar LED</button>
+</div>
+
+<div class="IFTS"><h1>Proyecto de tenicatura de sistemas embebidos y IOT IFTS 14</h1> </div>
+</body>
+</html>
